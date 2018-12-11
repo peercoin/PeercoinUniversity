@@ -1,1 +1,4 @@
 theme: jekyll-theme-cayman
+include:
+  - 00-welcome.md
+  - 01-introduction.md
