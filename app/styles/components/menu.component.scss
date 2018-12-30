@@ -42,7 +42,7 @@
     transition: transform 0.5s cubic-bezier(.17,.67,.45,1);
     transform: translate3d(-100%, 0, 0);
     box-shadow: 5px 0 30px rgba(#000, 0.1);
-    background: #fff;
+    // background: #fff;
     top: 0;
     height: 100vh;
   }
@@ -57,7 +57,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90px;
+    height: 100px;
     cursor: pointer;
     
     img {
@@ -162,7 +162,7 @@
 
       &.active {
         > a {
-          background: rgba($color-primary, 0.05) !important;
+          background: rgba(#fff, 0.1) !important;
 
           &:after {
             content: '';
