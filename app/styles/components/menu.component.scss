@@ -110,6 +110,18 @@
 
         &.show {
           display: block;
+
+          .subsection {
+            display: block;
+          }
+        }
+
+        .subsection {
+          a {
+            padding-left: 40px;
+            font-size: 1.3rem;
+            opacity: 0.5;
+          }
         }
       }
 

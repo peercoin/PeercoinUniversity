@@ -162,10 +162,11 @@
       },
       generateMenu () {
         let docElements = this.refs.docContainer;
-        let headingItems = docElements.querySelectorAll('h1, h2');
+        let headingItems = docElements.querySelectorAll('h1, h2, h3');
         let menuItems = [];
         let menuItemsFlat = [];
         let currH1;
+        let currH2;
 
         headingItems.forEach((item) => {
           menuItemsFlat.push({
@@ -185,6 +186,15 @@
             return;
           } else if (item.nodeName.toLowerCase() === 'h2') {
             currH1.children.push({
+              type: item.nodeName.toLowerCase(),
+              label: item.textContent,
+              id: item.id
+            });
+            currH2 = currH1.children[currH1.children.length - 1];
+            currH2.children = [];
+            return;
+          } else {
+            currH2.children.push({
               type: item.nodeName.toLowerCase(),
               label: item.textContent,
               id: item.id
