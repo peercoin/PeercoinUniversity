@@ -13,7 +13,7 @@
   align-items: center;
   padding: 0 1rem;
   padding-left: $app-menu-width;
-  background: #363636;
+  background: $color-primary;
   box-shadow: 0 1px 3px rgba(#000, 0.1);
 
   @include viewports(up-to small) {
@@ -23,7 +23,7 @@
   }
 
   .logo {
-    width: 200px;
+    width: 220px;
     position: absolute;
     left: 0;
     top: 50%;
@@ -32,6 +32,10 @@
 
     @include viewports(up-to small) {
       display: none;
+    }
+
+    img {
+      display: block;
     }
   }
 
