@@ -163,14 +163,14 @@
     li {
       padding: 1rem;
       border-bottom: 1px solid rgba($color-primary, 0.5);
-      color: #ababab;
+      color: $color-neutral;
 
       &:before {
         counter-increment: section;
         content: counter(section) '.';
         padding-right: 0.5rem;
         font-weight: bold;
-        color: #929292;
+        color: $color-primary;
       }
 
       &:last-child {

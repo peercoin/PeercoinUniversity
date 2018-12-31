@@ -2,7 +2,7 @@
 <div>
   <div class="MenuComp--overlay {{(isOpen) ? 'active' : ''}}" ref:overlay on:click="fire('mobilemenu', {action: 'CLOSE'})"></div>
   <div class="MenuComp {{(isOpen) ? 'open' : ''}}" ref:menu on:swipeleft="fire('mobilemenu', {action: 'CLOSE'})">
-    <img src="img/logo.svg" alt="Peercoin University" class="logo">
+    <img src="img/logo-green.svg" alt="Peercoin Docs" class="logo">
     <ul class="menu">
       {{#each menuItems as item}}
         <li id="menu-{{item.id}}" class="{{item.type}}">
@@ -11,7 +11,16 @@
               <ul class="subsection">
                 {{#each item.children as subitem}}
                   <li id="menu-{{subitem.id}}" class="{{subitem.type}}">
-                    <a on:click="scrollToItem(subitem, event)" href="#{{subitem.id}}">{{subitem.label}}</a>
+                    <a on:click="scrollToItem(subitem, event)" href="#{{subitem.id}}">{{subitem.label}}</a>                    
+                    {{#if subitem.children.length > 0}}
+                      <ul class="subsection">
+                        {{#each subitem.children as thirditem}}
+                          <li id="menu-{{thirditem.id}}" class="{{thirditem.type}}">
+                            <a on:click="scrollToItem(thirditem, event)" href="#{{thirditem.id}}">{{thirditem.label}}</a>
+                          </li>
+                        {{/each}}
+                      </ul>
+                    {{/if}}
                   </li>
                 {{/each}}
               </ul>
@@ -72,18 +81,24 @@
             // Highlight item
             menuToHighlight.classList.add('active');
 
-            let sectionToShow = menuToHighlight.parentNode;
+            let sectionToShow = menuToHighlight.parentElement;
 
-            // If its an item inside subsection, make subsection (father) visible
-            if(sectionToShow.classList.contains('subsection')) {
-              [...document.querySelectorAll('.menu .subsection')].map(i => i.classList.remove('show'));
-              sectionToShow.classList.add('show');
+            if (el.nodeName === 'H3') {
+              sectionToShow = menuToHighlight.parentElement.parentElement.parentElement;
             }
 
             // If its an item father of a subsection, make subsection (child) visible
             if(menuToHighlight.querySelectorAll('.subsection').length > 0) {
-              [...document.querySelectorAll('.menu .subsection')].map(i => i.classList.remove('show'));
-              menuToHighlight.querySelector('.subsection').classList.add('show');
+              Array.from(document.querySelectorAll('.menu .subsection.show')).map(i => i.classList.remove('show'));
+              Array.from(menuToHighlight.querySelectorAll('.subsection')).map(i => i.classList.add('show'));
+            }
+
+            // If its an item inside subsection, make subsection (father) visible
+            if(sectionToShow.classList.contains('subsection')) {
+              Array.from(document.querySelectorAll('.menu .subsection.show'))
+                .filter((i) => { i !== menuToHighlight })
+                .map(i => i.classList.remove('show'));              
+              sectionToShow.classList.add('show');
             }
 
             // Stop loop
