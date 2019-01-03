@@ -1,4 +1,4 @@
-# 12. Scalability of Peercoin'
+# 12. Scalability of Peercoin
 Unlike most blockchain projects, Peercoin developers have never believed that blockchains alone by themselves could scale to full worldwide usage levels. In fact Sunny King himself tailored the Peercoin blockchain and its economics to fit what he originally termed the “backbone currency” role, which is now commonly known in the crypto community as a settlement layer.
 
 The Backbone of Crypto
