@@ -1,4 +1,4 @@
-# 10. First Efficient & Sustainable Blockchain
+# 10. Efficient & Sustainable Security
 
 Earlier we learned that mining power in Bitcoin centralizes over time. This occurs because it’s possible for proof-of-work to be gamed in such a way that a miner can achieve an advantage over their competition. All miners have to do to increase their chances of earning rewards is to figure out how to be faster than everyone else. Over time this drive to be faster has led to the creation of the mining industry and specialized equipment. These developments have caused the cost of entry to skyrocket in price to the point of being unaffordable for normal users.
 
