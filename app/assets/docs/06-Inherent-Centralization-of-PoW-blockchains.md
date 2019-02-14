@@ -1,6 +1,6 @@
-# 6. Inherent Centralization of Proof-Of-Work blockchains
+# 6. Inherent Centralization of Proof-of-Work Blockchains
 
-Blockchains can only be considered trustless if power is distributed among many network validators; Proof-Of-Work’s design, however, has tendency to centralize its validators (miners) over time. This centralizing effect is natural effect of [economies of the scale](https://www.investopedia.com/terms/e/economiesofscale.asp).
+Blockchains can only be considered trustless if power is distributed among many network validators; proof-of-work’s design, however, has a tendency to centralize its validators (miners) over time. This centralization is a natural effect of [economies of scale](https://www.investopedia.com/terms/e/economiesofscale.asp).
 
 > Economies of scale refer to reduced costs per unit that arise from increased total output of a product. For example, a larger factory will produce power hand tools at a lower unit price, and a larger medical system will reduce cost per medical procedure.
 
@@ -8,9 +8,9 @@ Blockchains can only be considered trustless if power is distributed among many 
 
 Why is this? By its nature, proof-of-work incentivizes competition between its validators who, as miners, compete with each other to mine blocks, add them to the chain and receive their block reward of new coins.
 
-To stay ahead of the competition, miners reinvest their profit in better mining equipment that increases their hashes per second. This allows a miner to make more guesses per second, which gives them a higher chance of solving a block before other miners. Miners who can afford to purchase this specialized mining equipment will have an edge over others when it comes to earning block rewards. Also, it's common that miner is a ASIC chip producer which makes matters worse as latest, most efficient, hardware is kept back from the mass market while being used by producer in private.
+To stay ahead of the competition, miners reinvest their profit in better mining equipment that increases their hashes per second. This allows a miner to make more guesses per second, which gives them a higher chance of solving a block before other miners. Miners who can afford to purchase this specialized mining equipment will have an edge over others when it comes to earning block rewards.
 
-In the beginning, Bitcoin miners were plentiful, distributed and used basic computers to mine blocks. As time went on, people have figured out how to use GPUss and FPGAs to miner Bitcoins. Eventually miners graduated to ASICs, which are customized chips designed specifically for mining. At each phase, miners were either forced to upgrade to faster and more efficient equipment in order to keep up with the competition, or face becoming obsolete as their block rewards dried up.
+In the beginning, Bitcoin miners were plentiful, distributed, and used basic CPUs to mine blocks. As time went on, miners began to increase their hashing power by figuring out how to use GPUs and FPGAs to mine Bitcoin. Eventually miners graduated to ASICs, which are customized chips designed specifically for mining. At each phase, miners were either forced to upgrade to faster and more efficient equipment in order to keep up with the competition, or face becoming obsolete as their block rewards dried up.
 
 ## Domination by Mining Pools
 
