@@ -8,7 +8,7 @@ In Peercoin, the process of validating new transactions and blocks works quite d
 
 Coin age is a number that is derived from multiplying the amount of coins a minter owns by the number of days those coins have been held in their wallet. A minter who has a high coin age for example has both a high number of coins in their wallet and those coins have also been sitting in that wallet for quite a long period of time.
 
-Peercoin’s protocol combines some amount of randomization with coin age in order to automatically select the next person who mints a block. A minter with a highn coin age has a higher probability of minting the next block over a minter with a low coin age. There are no computationally difficult problems for minters to solve in Peercoin’s protocol. A minter’s chances of being selected as the next block producer rely specifically on the number of coins held and time in the form of coin age and some amount of luck.
+Peercoin’s protocol combines some amount of randomization with coin age in order to automatically select the next person who mints a block. A minter with a high coin age has a higher probability of minting the next block over a minter with a low coin age. There are no computationally difficult problems for minters to solve in Peercoin’s protocol. A minter’s chances of being selected as the next block producer rely specifically on the number of coins held and time in the form of coin age and some amount of luck.
 
 ## Time Based Rules & Restrictions
 
