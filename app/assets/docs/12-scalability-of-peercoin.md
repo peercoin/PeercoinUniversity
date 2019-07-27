@@ -7,7 +7,8 @@ From the very beginning, Sunny believed that adapting blockchains directly for w
 
 The following quote by Sunny King is from a 2013 interview conducted for the Peercoin community. As you can see below, Sunny’s deep understanding of blockchain technology greatly influenced his design for the Peercoin network. The quote has been slightly modified from its original state to remove references of Primecoin, another blockchain that was invented by Sunny which is not very relevant to this text.
 
-Sunnky_King
+Sunny_King:
+
 >Peercoin is energy efficient and is designed to last. Bitcoin has a long term uncertainty as to whether transaction fees can sustain good enough level of security. Before that the main concern is how to balance transaction volume and transaction fee levels. Currently I get the feeling that bitcoin developers favor very low transaction fees and very high transaction volume, to be competitive against centralized systems (paypal, visa, mastercard etc) in terms of transaction volume, to the point of sacrificing decentralization. This also brings major uncertainties to bitcoin’s future.
 
 >From my point of view, I think the cryptocurrency movement needs at least one ‘backbone’ currency, or more, that maintains a high degree of decentralization, maintains a high level of security, but not necessarily providing high volume of transactions. Thinking of savings accounts and gold coins, you don’t transact them at high velocity but they form the backbone of the monetary systems.
