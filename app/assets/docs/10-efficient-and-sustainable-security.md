@@ -2,7 +2,7 @@
 
 Earlier we learned that mining power in Bitcoin centralizes over time. This occurs because it’s possible for proof-of-work to be gamed in such a way that a miner can achieve an advantage over their competition. All miners have to do to increase their chances of earning rewards is to figure out how to be faster than everyone else. Over time this drive to be faster has led to the creation of the mining industry and specialized equipment. These developments have caused the cost of entry to skyrocket in price to the point of being unaffordable for normal users.
 
-Due to the fact that a large miner will always be able to process more hashes per second, they will always have a higher probability of mining a block than a small miner. It is possible for a small miner to solve a block, but their odds of doing so are extremely miniscule to the point that they could mine consistently for many years before being able to find one.
+Due to the fact that a large miner will always be able to process more hashes per second, they will always have a higher probability of mining a block than a small miner. It is possible for a small miner to solve a block, but their odds of doing so are extremely minuscule to the point that they could mine consistently for many years before being able to find one.
 
 Unfortunately, not many people can afford to waste money on electricity costs for years on end for such tiny odds of mining a block. Electricity bills have to be paid in the meantime and that length of time to wait in between rewards is just too great without being paid. Once regular rewards are no longer possible they are likely to just quit mining altogether, leaving a shrinking number of larger miners to compete amongst themselves.
 
