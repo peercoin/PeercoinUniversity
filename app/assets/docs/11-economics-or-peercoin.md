@@ -1,6 +1,8 @@
 
 # 11. Economics of Peercoin
 
+> The problem that cryptocurrency seeks to fix is not inflation itself, but inflation that is excessive, centrally controlled, and open to manipulation. The solution is not zero inflation, but inflation that is limited and decentralized.
+
 Earlier in this text Peercoin was called a drop-in replacement for Bitcoin. This label fits because Peercoin provides a blockchain with an alternative consensus scheme that solves Bitcoin’s major security flaws in a way that allows the chain to operate indefinitely. However Peercoin diverges from Bitcoin in a major way when it comes to the economics behind the system.
 
 ## An Unlimited, but Ultimately Scarce Supply
